@@ -477,6 +477,12 @@ deploy:     ##配置githubdeploy
 <h3 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h3><p>仓库名称以<code>your github name</code> + <code>github.io</code>命名。</p>
 <h3 id="发布上传"><a href="#发布上传" class="headerlink" title="发布上传"></a>发布上传</h3><p>在全局的_config.yml配置deploy选项,执行命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line"><span class="comment">###出现如下报错</span></div><div class="line">ERROR Deployer not found: git</div><div class="line"><span class="comment">###解决上述报错可以使用以下代码,反之则跳过</span></div><div class="line"><span class="variable">$npm</span> install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>继续执行,还是出现问题<br>    ERROR: Repository not found.<br>    fatal: Could not read from remote repository.</p>
+<pre><code>Please make sure you have the correct access rights
+and the repository exists.
+</code></pre><p>解决这个问题是github的密钥导致的。执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">＃ssh-keygen -t rsa -b 4096 -C &quot;xxx@xxx.com&quot;</div></pre></td></tr></table></figure>
+<p>然后将<code>id_rsa.pub</code>的内容上传到github的<code>SSH keys</code>,参看路径 <code>Settings-&gt;SSH and GPG keys</code>。</p>
 <p>本人建议同时上传源码,以防万一。具体的搭建问题可以联系本人微信。<img src="http://7xnujk.com1.z0.glb.clouddn.com/IMG_1332.JPG" width="100" alt="我的微信" align="center"></p>
 
           
