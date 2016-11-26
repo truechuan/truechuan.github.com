@@ -113,7 +113,7 @@
 1$ hexo -v
 建站启动Hexo服务安">
 <meta property="og:image" content="http://truechuan.github.io/http://7xnujk.com1.z0.glb.clouddn.com/IMG_1332.JPG">
-<meta property="og:updated_time" content="2016-11-26T04:40:49.000Z">
+<meta property="og:updated_time" content="2016-11-26T04:53:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + Github Pages 搭建博客">
 <meta name="twitter:description" content="动手搭建Hexo + Github Pages 的静态资源博客。基于Mac OS系统。
@@ -510,7 +510,7 @@ deploy:     ##配置githubdeploy
 <h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>在source目录下找到对应的md文件进行编写。具体的<a href="&quot;http://wowubuntu.com/markdown/&quot;">MarkDown的语法</a> 。</p>
 <h3 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h3><p>仓库名称以<code>your github name</code> + <code>github.io</code>命名。</p>
 <h3 id="发布上传"><a href="#发布上传" class="headerlink" title="发布上传"></a>发布上传</h3><p>在全局的_config.yml配置deploy选项,执行命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line"><span class="comment">###出现如下报错</span></div><div class="line">ERROR Deployer not found: git</div><div class="line"><span class="comment">###解决上述报错可以使用以下代码,反之则跳过</span></div><div class="line"><span class="variable">$npm</span> install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <p>本人建议同时上传源码,以防万一。具体的搭建问题可以联系本人微信。<img src="http://7xnujk.com1.z0.glb.clouddn.com/IMG_1332.JPG" width="100" alt="我的微信" align="center"></p>
 
       
@@ -542,22 +542,6 @@ deploy:     ##配置githubdeploy
         </div>
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/11/25/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -648,7 +632,7 @@ deploy:     ##配置githubdeploy
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
