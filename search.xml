@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Hexo + Github Pages 搭建博客]]></title>
+      <url>%2F2016%2F11%2F25%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[动手搭建Hexo + Github Pages 的静态资源博客。基于Mac OS系统。 搭建环境安装Node.js和Git 环境具体的安装前提可以参考文档 。 安装Hexo执行命令 1$ npm install -g hexo-cli ##-g 全局安装 全局安装 将安装包放在 /usr/local 下 可以直接在命令行里使用 查看是否安装成功执行 1$ hexo -v 建站启动Hexo服务安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。 123$ hexo init &lt;folder&gt; ##hexo需要安装的目录$ cd &lt;folder&gt;$ npm install 至此为止Hexo的搭建大功告成。下面开始运行Hexo。 12$ hexo generte$ hexo server 直接访问localhost:4000 ,可以看到Hexo已经运行起来。 个性化 设置theme 本人选择的Next主题 ,选用主题的Scheme是Mist，整洁有序的单栏外观，顺便说一下修改Next的Schems文件在themes/next/_config.yml下。 123#scheme: Musescheme: Mist#scheme: Pisces 我这边是直接在github下载的Next的主题 ，然后在Hexo目录下的themes下解压。 修改默认选项 Hexo的默认选项在项目根目录下的_config_yml下。具体的修改可以参看我自己的配置文件。 # Hexo Configuration ## Docs: https://hexo.io/docs/configuration.html ## Source: https://github.com/hexojs/hexo/ # Site title: 陈川点滴 ##网站标题 subtitle: 人、技术、成长 ##网站副标题 description: 立即行动 ##网站描述 author: 陈川 ##您的名字 ##头像地址 avatar: https://avatars2.githubusercontent.com/u/7081564?v=3&amp;s=460 ##语言，这里选择简体中文 language: zh-Hans timezone: ##社交 social: GitHub: https://github.com/truechuan # URL ## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos; url: http://truechuan.github.io root: / permalink: :year/:month/:day/:title/ permalink_defaults: # Directory source_dir: source public_dir: public tag_dir: tags archive_dir: archives category_dir: categories code_dir: downloads/code i18n_dir: :lang skip_render: # Writing new_post_name: :title.md # File name of new posts default_layout: post titlecase: false # Transform title into titlecase external_link: true # Open external links in new tab filename_case: 0 render_drafts: false post_asset_folder: false relative_link: false future: true highlight: enable: true line_number: true auto_detect: true tab_replace: # Category &amp; Tag default_category: uncategorized category_map: tag_map: # Date / Time format ## Hexo uses Moment.js to parse and display date ## You can customize the date format as defined in ## http://momentjs.com/docs/#/displaying/format/ date_format: YYYY-MM-DD time_format: HH:mm:ss # Pagination ## Set per_page to 0 to disable pagination per_page: 10 pagination_dir: page # Extensions ## Plugins: https://hexo.io/plugins/ ## Themes: https://hexo.io/themes/ theme: next ##配置多说，参考 http://duoshuo.com/ duoshuo_shortname: truechuan duoshuo_share: true duoshuo_hotartical: true # Search search: path: search.xml field: post format: html limit: 10000 # Deployment ## Docs: https://hexo.io/docs/deployment.html deploy: ##配置githubdeploy type: git #部署工具的类型 repository: git@github.com:truechuan/truechuan.github.com.git #SSH链接 branch: master #分支 安装插件 安装多说 ,社交评论插件。具体配置参看前面我的_config_yml。 安装站内搜索工具Local Search 。 不蒜子统计 。这里特别注意，是取themes下的_config.yml下修改配置文件。 未完待续… 创建第一篇博客所有的博客内容都存在source目录。 执行命令 1$ hexo new [layout] &lt;title&gt; GitHub Pages在source目录下找到对应的md文件进行编写。具体的MarkDown的语法 。 创建github仓库仓库名称以your github name + github.io命名。 发布上传在全局的_config.yml配置deploy选项,执行命令 1$ hexo deploy 本人建议同时上传源码,以防万一。具体的搭建问题可以联系本人微信。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2016%2F11%2F25%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
